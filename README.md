@@ -1,82 +1,85 @@
-# README
+Descrição do Projeto
+O site tem como objetivo ajudar estudantes de Tecnologia da Informação (TI) a encontrar livros recomendados para aprender novas linguagens de programação e tecnologias. Os usuários poderão pesquisar por uma linguagem ou tecnologia específica e receber recomendações de livros que cobrem o tópico de interesse.
 
-## Descrição do Projeto
+Requisitos Funcionais
+1- O site deve permitir que os usuários busquem por livros relacionados a uma linguagem de programação. 2- O site deve fornecer recomendações baseadas em filtros e preferências. 3- O site deve mostrar informações detalhadas sobre cada livro e permitir avaliações por parte dos usuários.
 
-O projeto visa desenvolver uma **plataforma digital** que conecte donos de pets a prestadores de serviços de babá de pets. A ideia é criar um espaço onde os donos possam encontrar cuidadores qualificados para seus animais de estimação, enquanto os prestadores de serviço possam buscar oportunidades de trabalho freelance.
+Requisitos Não Funcionais
 
-## Requisitos Funcionais
+1. Desempenho e Escalabilidade
+Escalabilidade: A arquitetura deve permitir a adição de mais servidores ou recursos conforme o número de usuários cresce.
 
-Os requisitos funcionais da plataforma incluem:
+3. Disponibilidade e Confiabilidade
+Tempo de Atividade: O site deve ter um tempo de atividade de 99,9% ao longo do ano.
+Backup e Recuperação: O sistema deve realizar backups diários dos dados e ter um plano de recuperação em caso de falha para garantir a integridade e a continuidade dos dados.
 
-1. **Cadastro de Usuários**: Permitir que donos de pets e prestadores de serviços criem perfis na plataforma.
-2. **Busca de Prestadores**: Os donos devem poder buscar prestadores de serviços com base em localização, tipo de animal e avaliações.
-3. **Criação de Anúncios**: Prestadores devem ter a capacidade de criar anúncios detalhando seus serviços, preços e disponibilidade.
-4. **Sistema de Avaliação**: Implementar um sistema de avaliação onde os donos possam avaliar os prestadores após a prestação de serviços.
-5. **Mensagens Diretas**: Permitir comunicação direta entre donos e prestadores para discutir detalhes dos serviços.
-6. **Agendamento de Serviços**: Facilitar o agendamento de serviços e a confirmação de reservas.
+4. Segurança
+Proteção de Dados: Os dados dos usuários devem ser criptografados tanto em trânsito (usando HTTPS) quanto em repouso.
+Autenticação e Autorização: Implementar autenticação segura (como OAuth ou JWT) e garantir que apenas usuários autorizados possam acessar funções administrativas ou sensíveis.
 
-## Requisitos Não Funcionais
+5. Usabilidade e Acessibilidade
+Design Responsivo: O site deve ser otimizado para dispositivos móveis e desktops, garantindo uma experiência de usuário consistente em diferentes tamanhos de tela.
+Acessibilidade: Seguir as diretrizes de acessibilidade web (WCAG) para garantir que o site seja utilizável por pessoas com deficiências, como a adição de texto alternativo para imagens e suporte a navegação por teclado.
 
-Os requisitos não funcionais da plataforma incluem:
+6. Manutenibilidade e Evolução
+Código Limpo e Documentado: O código fonte deve ser bem documentado e seguir boas práticas de programação para facilitar a manutenção e evolução futura.
+Facilidade de Atualizações: O sistema deve permitir atualizações e melhorias contínuas sem a necessidade de grandes reconfigurações..
+Dependências
+Tecnologias:
 
-1. **Usabilidade**: A interface deve ser intuitiva e fácil de usar, tanto para donos quanto para prestadores.
-2. **Desempenho**: O sistema deve ser capaz de suportar um grande número de usuários simultaneamente.
-3. **Segurança**: Garantir a proteção dos dados dos usuários, incluindo informações pessoais e de pagamento.
-4. **Escalabilidade**: A plataforma deve ser projetada para suportar um crescimento no número de usuários e serviços oferecidos.
+Frontend: React
+Backend: Node.js com Express
+Banco de Dados: MySQL Workbench
+Ferramentas:
 
-## Dependências
+IDEs (Ambientes de Desenvolvimento Integrados)
 
-### Tecnologias
+Visual Studio Code: Popular por sua flexibilidade e extensões para diferentes linguagens e frameworks.
+WebStorm: Ideal para desenvolvimento front-end com JavaScript e frameworks relacionados.
+-Depuradores:
 
-- **Frontend**: React ou Angular
-- **Backend**: Node.js com Express
-- **Banco de Dados**: MongoDB ou PostgreSQL
-- **Autenticação**: JWT (JSON Web Tokens)
+Chrome DevTools: Ferramenta poderosa para depuração de código JavaScript no navegador.
 
-### Serviços de Terceiros
+Análise de Riscos
 
-- **Processamento de Pagamentos**: Stripe ou PayPal
-- **Serviços de Geolocalização**: Google Maps API
+Riscos Técnicos
 
-## Análise de Riscos
+Falhas de Sistema: Bugs ou problemas de compatibilidade.
+Mitigação: Testes rigorosos e monitoramento contínuo.
+Sobrecarregamento de Servidores: Alta carga no site.
+Mitigação: Escalabilidade automática e testes de carga.
 
-1. **Concorrência**: O mercado de serviços de babá de pets é competitivo, com várias plataformas já estabelecidas.
-2. **Qualidade do Serviço**: Garantir que os prestadores ofereçam serviços de qualidade e que os donos fiquem satisfeitos.
-3. **Segurança dos Animais**: Riscos associados à segurança e bem-estar dos pets durante o serviço.
-4. **Confiabilidade da Plataforma**: Necessidade de manter a plataforma estável e disponível para evitar perda de usuários.
+Riscos de Segurança
 
-## Comandos de Inicialização do TypeScript
+Violação de Dados: Comprometimento de dados sensíveis.
+Mitigação: Criptografia, autenticação multifator, e auditorias de segurança.
+Ataques Cibernéticos: Ataques como DDoS e injeção de SQL.
+Mitigação: Firewalls, IDS/IPS, e validação de entradas.
 
-1. **Instalação do TypeScript**:
+Riscos de Desempenho
 
-   ```bash
-   npm install -g typescript
-   ```
+Lentidão do Site: Desempenho abaixo do esperado.
+Mitigação: Otimização de código e monitoramento contínuo.
+Problemas de Compatibilidade: Falhas em diferentes navegadores ou dispositivos.
+Mitigação: Testes em vários navegadores e design responsivo.
 
-2. **Inicialização do Projeto**:
+Riscos Operacionais
 
-   ```bash
-   tsc --init
-   ```
+Erros Humanos: Falhas por parte da equipe.
+Mitigação: Treinamento e controle de qualidade.
+Dependência de Terceiros: Falhas em serviços externos.
+Mitigação: Planos de contingência e soluções alternativas.
 
-3. **Compilação do Código**:
+Riscos Legais e Regulatórios
 
-   ```bash
-   tsc
-   ```
+Não Conformidade: Violação de leis de proteção de dados.
+Mitigação: Consultar especialistas e garantir conformidade.
+Problemas de Direitos Autorais: Uso indevido de conteúdo protegido.
+Mitigação: Obter informações de fontes legítimas e usar conteúdo de forma apropriada.
 
-4. **Compilação de um Arquivo Específico**:
+Riscos Financeiros
 
-   ```bash
-   tsc arquivo.ts
-   ```
-
-5. **Observação de Alterações**:
-
-   ```bash
-   tsc --watch
-   ```
-
-## Conclusão
-
-A plataforma de babá de pets tem o potencial de atender a uma demanda crescente por serviços de cuidados para animais de estimação, proporcionando uma solução conveniente tanto para donos quanto para prestadores de serviços. Com um planejamento cuidadoso e a implementação das funcionalidades descritas, o projeto pode se tornar uma referência no mercado.
+Estouro de Orçamento: Custos acima do previsto.
+Mitigação: Análise financeira detalhada e controle rigoroso dos custos.
+Monetização Insuficiente: Falta de receita para cobrir custos.
+Mitigação: Plano de monetização claro e monitoramento financeiro contínuo.
